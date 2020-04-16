@@ -1,8 +1,8 @@
 from django import template
-from dbsettings.models import Setting
+from dbsettings.functions import getValue
 
 register = template.Library()
 
 @register.simple_tag
-def dbsetting(key):
-    return Setting.objects.get(key=key).value # pylint: disable=no-member
+def dbsetting(key, default=""):
+    return getValue(key, default)
