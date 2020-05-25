@@ -21,3 +21,9 @@ pairs in your database, so you can store configuation in your database easily.
 
 4. To retrieve a configuration value from the database, use
    dbsettings.functions.getValue(key) in your code.
+
+## Upgrade notes
+
+When upgrading to 0.9 from a previous version, your database tables will need
+to be updated. To do this, just execute step 2 from the "Quick start" section
+again.
