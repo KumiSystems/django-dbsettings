@@ -5,12 +5,14 @@ pairs in your database, so you can store configuation in your database easily.
 
 ## Quick start
 
-1. Add "dbsettings" to your INSTALLED_APPS setting like this::
+1. Add "dbsettings" to your INSTALLED_APPS setting like this:
 
-    INSTALLED_APPS = [
-        ...
+   ```python
+   INSTALLED_APPS = [
+        ...,
         'dbsettings',
     ]
+    ```
 
 2. Run ``python manage.py makemigrations dbsettings`` and 
    ``python manage.py migrate dbsettings`` to create the polls models.
