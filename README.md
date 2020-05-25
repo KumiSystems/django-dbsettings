@@ -9,11 +9,11 @@ pairs in your database, so you can store configuation in your database easily.
 
     INSTALLED_APPS = [
         ...
-        'polls',
+        'dbsettings',
     ]
 
-2. Run ``python manage.py makemigrations`` and ``python manage.py migrate`` to
-   create the polls models.
+2. Run ``python manage.py makemigrations dbsettings`` and 
+   ``python manage.py migrate dbsettings`` to create the polls models.
 
 3. Start the development server and visit http://127.0.0.1:8000/admin/
    to add configuration values or use dbsettings.functions.setValue(key, value)
