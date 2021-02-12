@@ -29,3 +29,11 @@ pairs in your database, so you can store configuation in your database easily.
 When upgrading to 0.9 from a previous version, your database tables will need
 to be updated. To do this, just execute step 2 from the "Quick start" section
 again.
+
+When upgrading to 0.9.5 or later from a previous version, you should first
+uninstall the old version. To do that, run:
+
+```
+pip uninstall django-dbsettings
+pip install dbsettings
+```
